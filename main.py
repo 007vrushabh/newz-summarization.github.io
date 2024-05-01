@@ -5,6 +5,14 @@ from urllib.request import urlopen
 from newspaper import Article
 import io
 import nltk
+import logging                                                          
+import lxml.etree                                                       
+import lxml.html                                                        
+import lxml.html.clean                                                  
+import re                                                               
+from html import unescape                                               
+import string
+
 nltk.download('punkt')
 
 st.set_page_config(page_title='InNews🇮🇳: A Summarised News📰 Portal', page_icon='./Meta/newspaper.ico')
